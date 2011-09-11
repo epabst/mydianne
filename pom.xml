@@ -17,6 +17,7 @@
   <properties>
     <scala.version>2.8.1</scala.version>
     <android.version>2.2.1</android.version>
+    <sign.debug>true</sign.debug>
   </properties>
   <repositories>
     <repository>
@@ -104,6 +105,7 @@
           </emulator>
           <deleteConflictingFiles>true</deleteConflictingFiles>
           <undeployBeforeDeploy>true</undeployBeforeDeploy>
+          <sign><debug>${sign.debug}</debug></sign>
         </configuration>
         <extensions>true</extensions>
       </plugin>
@@ -192,4 +194,51 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <profiles>
+    <profile>
+      <id>sign</id>
+      <properties>
+        <sign.debug>false</sign.debug>
+      </properties>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jarsigner-plugin</artifactId>
+            <version>1.2</version>
+            <executions>
+              <execution>
+                <id>signing</id>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+                <phase>package</phase>
+                <inherited>true</inherited>
+                <configuration>
+                  <archiveDirectory></archiveDirectory>
+                  <includes>
+                    <include>target/*.apk</include>
+                  </includes>
+                  <keystore>path/to/keystore</keystore>
+                  <storepass>storepasword</storepass>
+                  <keypass>keypassword</keypass>
+                  <alias>key-alias</alias>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+            <artifactId>maven-android-plugin</artifactId>
+            <inherited>true</inherited>
+            <configuration>
+              <sign>
+                <debug>false</debug>
+              </sign>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
