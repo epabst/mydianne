@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center"
-              android:orientation="vertical"
+              android:orientation="vertical" android:background="#FFFF00CC"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent">
-  <TextView android:layout_width="fill_parent" android:paddingBottom="10sp"
+  <TextView android:layout_width="fill_parent" android:paddingBottom="10sp" android:background="#FFFF00CC"
             android:layout_height="wrap_content" android:textSize="40sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="My Dianne," android:gravity="left"/>
-  <TextView android:layout_width="fill_parent"
+  <TextView android:layout_width="fill_parent" android:background="#FFFF00CC"
             android:layout_height="wrap_content" android:textSize="40sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Will you go to" android:gravity="center"/>
-  <TextView android:layout_width="fill_parent"
+  <TextView android:layout_width="fill_parent" android:background="#FFFF00CC"
             android:layout_height="wrap_content" android:textSize="40sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="prom with me?" android:gravity="center"/>
-  <LinearLayout android:orientation="horizontal" android:paddingTop="20sp"
+  <LinearLayout android:orientation="horizontal" android:paddingTop="20sp" android:background="#FFFF00CC"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" android:gravity="center">
-    <Button android:id="@+id/yes"
-            android:layout_width="wrap_content" android:paddingRight="20sp"
+    <Button android:id="@+id/yes" android:background="#FF00CC00"
+            android:layout_width="wrap_content" android:paddingLeft="20sp" android:paddingRight="20sp"
             android:layout_height="wrap_content" android:textSize="40sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Yes" android:gravity="center"/>
-    <Button android:id="@+id/no"
-            android:layout_width="wrap_content" android:paddingLeft="20sp"
+    <Button android:id="@+id/no" android:background="#FFFF0000"
+            android:layout_width="wrap_content" android:paddingLeft="20sp" android:paddingRight="20sp"
             android:layout_height="wrap_content" android:textSize="40sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="No" android:gravity="center"/>
   </LinearLayout>
