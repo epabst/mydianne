@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+  <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="My Dianne," android:gravity="left"/>
+  <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Will you go" android:gravity="center"/>
+  <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="to prom with me?" android:gravity="center"/>
+  <LinearLayout android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:gravity="center">
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+              android:text="Yes" android:gravity="center"/>
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge"
+              android:text="No" android:gravity="center"/>
+  </LinearLayout>
+</LinearLayout>
