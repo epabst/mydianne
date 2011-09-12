@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center"
-              android:orientation="vertical" android:background="#FF6699CC"
+              android:orientation="vertical" android:background="#FFFF00CC"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent">
-  <TextView android:layout_width="fill_parent" android:paddingBottom="10sp" android:background="#FF6699CC"
+  <TextView android:layout_width="fill_parent" android:paddingBottom="10sp" android:background="#FFFF00CC"
             android:layout_height="wrap_content" android:textSize="21sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Dianne," android:gravity="left"/>
-  <TextView android:layout_width="fill_parent" android:paddingLeft="20sp" android:background="#FF6699CC"
+  <TextView android:layout_width="fill_parent" android:paddingLeft="20sp" android:background="#FFFF00CC"
             android:layout_height="wrap_content" android:textSize="21sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="I want you to know that" android:gravity="left"/>
-  <TextView android:layout_width="fill_parent" android:background="#FF6699CC"
+  <TextView android:layout_width="fill_parent" android:background="#FFFF00CC"
             android:layout_height="wrap_content" android:textSize="21sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="YOU are the love of my life!" android:gravity="left"/>
-  <TextView android:layout_width="fill_parent" android:background="#FF6699CC"
+  <TextView android:layout_width="fill_parent" android:background="#FFFF00CC"
             android:layout_height="wrap_content" android:textSize="21sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Your profound heart envelopes me." android:gravity="left"/>
-  <TextView android:layout_width="fill_parent" android:background="#FF6699CC"
+  <TextView android:layout_width="fill_parent" android:background="#FFFF00CC"
             android:layout_height="wrap_content" android:textSize="21sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Your faith in me lifts me up." android:gravity="left"/>
-  <TextView android:layout_width="fill_parent" android:background="#FF6699CC"
+  <TextView android:layout_width="fill_parent" android:background="#FFFF00CC"
             android:layout_height="wrap_content" android:textSize="21sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Your beauty is everlasting." android:gravity="left"/>
-  <TextView android:layout_width="fill_parent" android:background="#FF6699CC"
+  <TextView android:layout_width="fill_parent" android:background="#FFFF00CC"
             android:layout_height="wrap_content" android:textSize="21sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="You have touched so many" android:gravity="left"/>
-  <TextView android:layout_width="fill_parent" android:background="#FF6699CC"
+  <TextView android:layout_width="fill_parent" android:background="#FFFF00CC"
             android:layout_height="wrap_content" android:textSize="21sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="lives for good, and mine" android:gravity="left"/>
-  <TextView android:layout_width="fill_parent" android:background="#FF6699CC"
+  <TextView android:layout_width="fill_parent" android:background="#FFFF00CC"
             android:layout_height="wrap_content" android:textSize="21sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="you have FILLED with joy." android:gravity="left"/>
-  <TextView android:layout_width="fill_parent" android:background="#FF6699CC"
+  <TextView android:layout_width="fill_parent" android:background="#FFFF00CC"
             android:layout_height="wrap_content" android:textSize="21sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Thank you for all you do and are!" android:gravity="left"/>
-  <TextView android:layout_width="fill_parent" android:background="#FF6699CC"
+  <TextView android:layout_width="fill_parent" android:background="#FFFF00CC"
             android:layout_height="wrap_content" android:textSize="21sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Love,  " android:gravity="right"/>
-  <TextView android:layout_width="fill_parent" android:background="#FF6699CC"
+  <TextView android:layout_width="fill_parent" android:background="#FFFF00CC"
             android:layout_height="wrap_content" android:textSize="21sp" android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="me" android:gravity="right"/>
 </LinearLayout>
