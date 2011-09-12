@@ -108,6 +108,15 @@
           <sign><debug>${sign.debug}</debug></sign>
         </configuration>
         <extensions>true</extensions>
+        <executions>
+          <execution>
+            <id>alignApk</id>
+            <phase>package</phase>
+            <goals>
+              <goal>zipalign</goal>
+            </goals>
+          </execution>
+        </executions>
       </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -215,14 +224,14 @@
                 <phase>package</phase>
                 <inherited>true</inherited>
                 <configuration>
-                  <archiveDirectory></archiveDirectory>
+                  <archiveDirectory>${basedir}</archiveDirectory>
                   <includes>
                     <include>target/*.apk</include>
                   </includes>
-                  <keystore>path/to/keystore</keystore>
-                  <storepass>storepasword</storepass>
-                  <keypass>keypassword</keypass>
-                  <alias>key-alias</alias>
+                  <keystore>${keystore}</keystore>
+                  <storepass>${storepass}</storepass>
+                  <alias>${keyalias}</alias>
+                  <keypass>${keypass}</keypass>
                 </configuration>
               </execution>
             </executions>
